@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Career Motivational Hub</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1 { color: green; }
+    #quote { font-style: italic; color: #555; margin-top: 20px; }
+  </style>
 </head>
 <body>
-  <h1 style="color:green;">Welcome to Career Motivational Hub</h1>
+  <h1>Welcome to Career Motivational Hub</h1>
   <p><b>Daily Career Tips & Motivational Quotes in Hindi + English</b></p>
 
   <h2>आज का मोटिवेशन</h2>
-  <p>"अगर आप उड़ नहीं सकते, तो दौड़िए। दौड़ नहीं सकते, तो चलिए। लेकिन हमेशा आगे बढ़ते रहिए।"</p>
+  <p id="quote"></p>
 
-  <h2>Today's Motivation</h2>
-  <p>"Don’t watch the clock; do what it does. Keep going."</p>
-
-  <hr>
+  <hr />
   <p>Visit daily for new career guidance and motivation.</p>
+
+  <script>
+    const quotes = [
+      "अगर आप उड़ नहीं सकते, तो दौड़िए। दौड़ नहीं सकते, तो चलिए। लेकिन हमेशा आगे बढ़ते रहिए।",
+      "Don’t watch the clock; do what it does. Keep going.",
+      "सपने वो नहीं जो हम सोते वक्त देखते हैं, सपने वो हैं जो हमें सोने नहीं देते।",
+      "Success doesn’t come to you, you go to it.",
+      "असफलता एक अवसर है फिर से बेहतर शुरुआत करने का।",
+      "Believe in yourself and all that you are.",
+      "जीवन में कठिनाईयाँ आने पर हार मत मानो, यही सफलता की सीढ़ियाँ हैं।",
+      "Push yourself, because no one else is going to do it for you."
+    ];
+
+    // Random quote select karo
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").textContent = quotes[randomIndex];
+  </script>
 </body>
 </html>
