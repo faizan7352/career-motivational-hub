@@ -1,104 +1,141 @@
-const quotes = [
-  "अगर आप उड़ नहीं सकते, तो दौड़िए। दौड़ नहीं सकते, तो चलिए। लेकिन हमेशा आगे बढ़ते रहिए।",
-  "Don’t watch the clock; do what it does. Keep going.",
-  "सपने वो नहीं जो हम सोते वक्त देखते हैं, सपने वो हैं जो हमें सोने नहीं देते।",
-  "Success doesn’t come to you, you go to it.",
-  "असफलता एक अवसर है फिर से बेहतर शुरुआत करने का।",
-  "Believe in yourself and all that you are.",
-  "जीवन में कठिनाईयाँ आने पर हार मत मानो, यही सफलता की सीढ़ियाँ हैं।",
-  "Push yourself, because no one else is going to do it for you.",
-  "कठिनाइयाँ ही जीवन का असली पाठ हैं।",
-  "Your limitation—it’s only your imagination.",
-  "रुकावटें हमें मजबूत बनाती हैं।",
-  "Dream it. Wish it. Do it.",
-  "कोशिश करने वालों की कभी हार नहीं होती।",
-  "Stay positive, work hard, make it happen.",
-  "हार मत मानो, क्योंकि यही वह जगह है जहाँ से सफलता शुरू होती है।",
-  "Don’t stop until you’re proud.",
-  "कर्म करो, फल की चिंता मत करो।",
-  "Push yourself because no one else is going to do it for you.",
-  "सपनों को पूरा करने का वक्त अब है।",
-  "Success is not for the lazy.",
-  "Every day is a second chance.",
-  "जो लोग बदलाव से डरते हैं, वे कभी आगे नहीं बढ़ पाते।",
-  "Don’t wait for opportunity. Create it.",
-  "सपने वो नहीं जो हम देखते हैं, बल्कि वो हैं जो हमें आगे बढ़ाते हैं।",
-  "Hard work beats talent when talent doesn’t work hard.",
-  "अपने सपनों को सच करने का रास्ता खुद बनाओ।",
-  "Success is walking from failure to failure with no loss of enthusiasm.",
-  "आज का प्रयास कल की सफलता की नींव है।",
-  "Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.",
-  "असफलता की तुलना में प्रयास ना करना बड़ा अपराध है।",
-  "The harder you work for something, the greater you’ll feel when you achieve it.",
-  "अपनी असफलताओं से सीखो और आगे बढ़ो।",
-  "Success usually comes to those who are too busy to be looking for it.",
-  "रास्ता हमेशा आसान नहीं होता, पर मंजिल जरूर मिलती है।",
-  "Don’t limit your challenges. Challenge your limits.",
-  "हर दिन एक नई शुरुआत है।",
-  "Wake up with determination. Go to bed with satisfaction.",
-  "परिश्रम का कोई विकल्प नहीं है।",
-  "Success is not in what you have, but who you are.",
-  "कोई भी महान कार्य अकेले नहीं होता।",
-  "Do something today that your future self will thank you for.",
-  "कभी भी अपनी क्षमताओं को कम मत आंकिए।",
-  "Success is the sum of small efforts repeated day in and day out.",
-  "आज का कठिन परिश्रम कल की सफलता है।",
-  "Don’t watch the clock; do what it does. Keep going.",
-  "अपने सपनों को पूरा करना आपके हाथ में है।",
-  "The key to success is to focus on goals, not obstacles.",
-  "बिना मेहनत के कोई सफलता नहीं मिलती।",
-  "Believe you can and you’re halfway there.",
-  "जीवन में कभी हार मत मानो।",
-  "Don’t wait for the right opportunity. Create it.",
-  "सपने पूरे करने के लिए कर्म जरूरी है।",
-  "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-  "असफलता से मत डरिए, उससे सीखिए।",
-  "The best way to get started is to quit talking and begin doing.",
-  "कोशिश करने वालों की कभी हार नहीं होती।",
-  "Don’t be afraid to give up the good to go for the great.",
-  "सपनों को सच करने के लिए मेहनत जरूरी है।",
-  "Success is not just about making money. It’s about making a difference.",
-  "कड़ी मेहनत ही सफलता की चाबी है।",
-  "Push yourself because no one else is going to do it for you.",
-  "अपने आप में विश्वास रखो।",
-  "Dream bigger. Do bigger.",
-  "हार मत मानो, संघर्ष करते रहो।",
-  "Don’t stop when you’re tired. Stop when you’re done.",
-  "सफलता के लिए धैर्य जरूरी है।",
-  "Success is liking yourself, liking what you do, and liking how you do it.",
-  "आज का परिश्रम कल का फल है।",
-  "Don’t let yesterday take up too much of today.",
-  "अपने लक्ष्य पर ध्यान केंद्रित करें।",
-  "Success is not for the lazy.",
-  "जीतने वाले कभी हार नहीं मानते।",
-  "The harder the battle, the sweeter the victory.",
-  "कभी भी प्रयास करना बंद मत करो।",
-  "Success is a journey, not a destination.",
-  "सपने वो नहीं जो हम सोते वक्त देखते हैं, बल्कि वो हैं जो हमें जागते वक्त नहीं छोड़ते।",
-  "The future depends on what you do today.",
-  "जो मेहनत करता है, वह कभी असफल नहीं होता।",
-  "You don’t have to be great to start, but you have to start to be great.",
-  "सपने बड़े देखो और उन्हें पूरा करने की कोशिश करो।",
-  "Believe in yourself and all that you are.",
-  "जीवन में आगे बढ़ने के लिए संघर्ष जरूरी है।",
-  "Don’t watch the clock; do what it does. Keep going.",
-  "जो लोग अपने सपनों के पीछे चलते हैं, वे कभी हारते नहीं।",
-  "Success is the result of preparation, hard work, and learning from failure.",
-  "कभी भी हार मानने वाले सफल नहीं होते।",
-  "Push yourself, because no one else is going to do it for you.",
-  "अपनी असफलताओं से सीखो और आगे बढ़ो।",
-  "Success doesn’t come to you, you go to it.",
-  "कड़ी मेहनत का कोई विकल्प नहीं होता।",
-  "Dream it. Wish it. Do it.",
-  "सपनों को पूरा करने के लिए हमेशा मेहनत करते रहो।",
-  "The only limit to our realization of tomorrow is our doubts of today.",
-  "आत्मविश्वास सफलता की पहली सीढ़ी है।",
-  "Success is not about how high you have climbed, but how you make a positive difference to the world.",
-  "मेहनत करो और सफलता खुद आपके पास आएगी।",
-  "Don’t be afraid to fail. Be afraid not to try.",
-  "सपनों को पूरा करने की ताकत आपके अंदर है।",
-  "The secret of getting ahead is getting started.",
-  "हर दिन को एक नया मौका समझो।",
-  "Success is the sum of small efforts repeated day in and day out.",
-  "अपने सपनों को सच करने के लिए कभी हार मत मानो।"
-];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Motivational Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .quote-box {
+      background: #fff;
+      border-left: 6px solid #4CAF50;
+      margin: 20px 0;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .quote-box h3 {
+      margin: 0 0 10px;
+      color: #333;
+    }
+    .quote-box p {
+      margin: 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Career Motivational Hub</h1>
+
+    <div class="quote-box">
+      <h3>“Believe you can and you're halfway there.”</h3>
+      <p>– विश्वास रखो कि आप कर सकते हैं, और आप आधे रास्ते पर हैं।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Success is not final, failure is not fatal.”</h3>
+      <p>– सफलता अंतिम नहीं है, विफलता घातक नहीं है।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Don't watch the clock; do what it does.”</h3>
+      <p>– घड़ी को मत देखो, जो वह करती है वही करो – चलते रहो।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Push yourself, because no one else is going to do it for you.”</h3>
+      <p>– खुद को आगे बढ़ाओ, क्योंकि कोई और आपके लिए नहीं करेगा।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Great things never come from comfort zones.”</h3>
+      <p>– महान चीजें कभी आरामदायक जगहों से नहीं आतीं।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Dream big and dare to fail.”</h3>
+      <p>– बड़ा सपना देखो और असफल होने की हिम्मत रखो।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Success doesn’t just find you. You have to go out and get it.”</h3>
+      <p>– सफलता खुद नहीं आती, आपको इसे हासिल करना होता है।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Hard work beats talent when talent doesn’t work hard.”</h3>
+      <p>– जब प्रतिभा मेहनत नहीं करती, तो मेहनत प्रतिभा को मात देती है।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Don’t stop when you’re tired. Stop when you’re done.”</h3>
+      <p>– जब थक जाओ तब नहीं, जब पूरा हो जाए तब रुको।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“It always seems impossible until it's done.”</h3>
+      <p>– जब तक कोई काम पूरा न हो जाए, वह असंभव लगता है।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Stay hungry, stay foolish.”</h3>
+      <p>– भूखे रहो, मूर्ख बने रहो।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Action is the foundational key to all success.”</h3>
+      <p>– कार्य ही सफलता की कुंजी है।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Success usually comes to those who are too busy to be looking for it.”</h3>
+      <p>– सफलता अक्सर उन्हें मिलती है जो उसे ढूंढ़ने में नहीं, बल्कि काम में व्यस्त होते हैं।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“The harder you work for something, the greater you'll feel when you achieve it.”</h3>
+      <p>– जितनी मेहनत से आप कुछ हासिल करेंगे, उसे पाकर उतना ही अच्छा महसूस होगा।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Dream it. Wish it. Do it.”</h3>
+      <p>– सपना देखो। चाहो। कर दिखाओ।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Don’t limit your challenges. Challenge your limits.”</h3>
+      <p>– अपनी चुनौतियों को सीमित मत करो, अपनी सीमाओं को चुनौती दो।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Wake up with determination. Go to bed with satisfaction.”</h3>
+      <p>– संकल्प के साथ उठो और संतोष के साथ सोओ।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Do something today that your future self will thank you for.”</h3>
+      <p>– आज ऐसा कुछ करो, जिसके लिए भविष्य का तुम तुम्हारा धन्यवाद करे।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“Little things make big days.”</h3>
+      <p>– छोटी-छोटी चीजें बड़े दिन बनाती हैं।</p>
+    </div>
+
+    <div class="quote-box">
+      <h3>“It’s going to be hard, but hard does not mean impossible.”</h3>
+      <p>– यह कठिन होगा, लेकिन कठिन का मतलब असंभव नहीं होता।</p>
+    </div>
+
+  </div>
+</body>
+</html>
