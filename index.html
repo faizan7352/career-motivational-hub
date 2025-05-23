@@ -4,63 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Career Motivational Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      background-color: #f0f4f8;
       color: #333;
     }
     header {
-      background-color: #4CAF50;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
       color: white;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    .quote {
-      background-color: white;
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background: white;
       margin: 20px auto;
       padding: 20px;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-    .quote img {
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
       width: 100%;
       border-radius: 10px;
     }
-    .quote p {
+    .quote {
       margin-top: 15px;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
       text-align: center;
     }
-    footer {
-      background-color: #ddd;
+    .translation {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
       text-align: center;
-      padding: 10px;
+    }
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Welcome to Career Motivational Hub</h1>
-  <p>Inspiration for your journey</p>
+  <h1>Career Motivational Hub</h1>
+  <p>Daily Inspiration to Keep You Going</p>
 </header>
 
-<div class="quote">
-  <img src="https://source.unsplash.com/600x300/?motivation,success" alt="Motivational Image">
-  <p>"Push yourself, because no one else is going to do it for you."</p>
-</div>
+<div class="container">
 
-<div class="quote">
-  <img src="https://source.unsplash.com/600x300/?career,goal" alt="Career Image">
-  <p>"Dream big. Work hard. Stay focused. Surround yourself with good people."</p>
+  <div class="card">
+    <img src="https://source.unsplash.com/700x300/?motivation" alt="Motivation Image">
+    <div class="quote">"Believe you can and you're halfway there."</div>
+    <div class="translation">– विश्वास रखो कि आप कर सकते हैं, और आप आधे रास्ते पर हैं।</div>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/700x300/?success" alt="Success Image">
+    <div class="quote">"Success is not final, failure is not fatal."</div>
+    <div class="translation">– सफलता अंतिम नहीं है, विफलता घातक नहीं है।</div>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/700x300/?clock,time" alt="Clock Image">
+    <div class="quote">"Don't watch the clock; do what it does."</div>
+    <div class="translation">– घड़ी को मत देखो; जो वह करती है वही करो – चलते रहो।</div>
+  </div>
+
 </div>
 
 <footer>
-  <p>© 2025 Career Motivational Hub</p>
+  © 2025 Career Motivational Hub | Powered by GitHub Pages
 </footer>
 
 </body>
