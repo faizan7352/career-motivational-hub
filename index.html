@@ -1,64 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Career Motivational Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motivational Quotes - Career Booster</title>
   <style>
     body {
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #4caf50;
+      background-color: #2196f3;
       color: white;
-      padding: 20px;
+      padding: 20px 0;
       text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
     }
     .quote-card {
-      background: white;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      margin: 20px;
-      padding: 20px;
-      text-align: center;
-    }
-    .quote-card img {
-      max-width: 100%;
-      border-radius: 10px 10px 0 0;
-    }
-    .quote-text {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    footer {
-      background-color: #eee;
+      background-color: #f1f8e9;
+      border-left: 5px solid #4caf50;
       padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px #ddd;
+    }
+    .quote-card h3 {
+      margin: 0;
+      color: #2e7d32;
+    }
+    .quote-card p {
+      margin: 5px 0 0;
+      color: #555;
+    }
+    .video-section {
       text-align: center;
-      font-size: 0.9em;
+      margin-top: 40px;
+    }
+    iframe {
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px #999;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to Career Motivational Hub</h1>
-    <p>Inspiration for your journey</p>
+    Career Motivation Hub
   </header>
 
-  <div class="quote-card">
-    <img src="https://source.unsplash.com/600x200/?motivation" alt="Motivational Image">
-    <p class="quote-text">"Push yourself, because no one else is going to do it for you."</p>
+  <div class="container">
+
+    <!-- Quote 1 -->
+    <div class="quote-card">
+      <h3>“Success doesn't come to you, you go to it.”</h3>
+      <p>“सफलता आपके पास नहीं आती, आपको उसके पास जाना होता है।”</p>
+    </div>
+
+    <!-- Quote 2 -->
+    <div class="quote-card">
+      <h3>“Believe in yourself and all that you are.”</h3>
+      <p>“अपने आप पर विश्वास रखो और उस सब पर जो तुम हो।”</p>
+    </div>
+
+    <!-- Quote 3 -->
+    <div class="quote-card">
+      <h3>“Great things never come from comfort zones.”</h3>
+      <p>“महान चीजें कभी भी आरामदायक जगहों से नहीं आतीं।”</p>
+    </div>
+
+    <!-- Quote 4 -->
+    <div class="quote-card">
+      <h3>“Failure is the first step to success.”</h3>
+      <p>“असफलता सफलता की पहली सीढ़ी है।”</p>
+    </div>
+
+    <!-- YouTube Video -->
+    <div class="video-section">
+      <h2>Watch This Motivational Video</h2>
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
   </div>
 
-  <div class="quote-card">
-    <img src="https://source.unsplash.com/600x200/?career,success" alt="Career Image">
-    <p class="quote-text">"Dream big. Work hard. Stay focused. Surround yourself with good people."</p>
-  </div>
-
-  <footer>
-    © 2025 Career Motivational Hub
-  </footer>
 </body>
 </html>
