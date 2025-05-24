@@ -1,20 +1,25 @@
-# Catch Motivational Hub  
+# 🌟 Catch Motivational Hub
 
-🌟 **वेबसाइट लिंक:** [https://yourusername.github.io/catch-motivational-hub](https://yourusername.github.io/catch-motivational-hub)  
+🔗 **Live Website:** [https://yourusername.github.io/catch-motivational-hub](https://yourusername.github.io/catch-motivational-hub)
 
-## इस रिपोजिटरी के बारे में  
-- मोटिवेशनल कोट्स और करियर टिप्स की फ्री वेबसाइट।  
-- HTML/CSS से बनी हुई।  
+## 📌 About
+A free collection of motivational quotes and career tips in Hindi/English.
 
-## फीचर्स  
-- रोज़ नए कोट्स  
-- सरल और मोबाइल-फ्रेंडली डिज़ाइन  
+## ✨ Features
+- Daily updated quotes
+- Simple and clean design
+- Mobile-friendly
+- 100% free content
 
-## कैसे योगदान दें?  
-1. इस रिपोजिटरी को **Fork** करें।  
-2. `index.html` में नए कोट्स जोड़ें।  
-3. **Pull Request** भेजें!  
+## 🛠️ How to Contribute?
+1. **Fork** this repository
+2. Add new quotes in `index.html`
+3. Create a **Pull Request**
 
-## संपर्क करें  
+## 📞 Contact
 📧 Email: yourname@example.com  
-🐦 Twitter: [@YourHandle](https://twitter.com/)  
+🐦 Twitter: [@YourHandle](https://twitter.com/YourHandle)
+
+---
+
+"Believe you can and you're halfway there." - Theodore Roosevelt
