@@ -1,94 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Motivational Quotes - Career Booster</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #2196f3;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .quote-card {
-      background-color: #f1f8e9;
-      border-left: 5px solid #4caf50;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 2px 2px 10px #ddd;
-    }
-    .quote-card h3 {
-      margin: 0;
-      color: #2e7d32;
-    }
-    .quote-card p {
-      margin: 5px 0 0;
-      color: #555;
-    }
-    .video-section {
-      text-align: center;
-      margin-top: 40px;
-    }
-    iframe {
-      border-radius: 8px;
-      box-shadow: 2px 2px 10px #999;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100% हिंदी-अंग्रेज़ी मोटिवेशनल कोट्स</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .quote {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .hindi { color: #d63384; }
+        .english { color: #0d6efd; }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1>✨ मोटिवेशनल कोट्स (हिंदी & अंग्रेज़ी)</h1>
 
-  <header>
-    Career Motivation Hub
-  </header>
-
-  <div class="container">
-
-    <!-- Quote 1 -->
-    <div class="quote-card">
-      <h3>“Success doesn't come to you, you go to it.”</h3>
-      <p>“सफलता आपके पास नहीं आती, आपको उसके पास जाना होता है।”</p>
+    <!-- ===== हिंदी + अंग्रेज़ी कोट्स ===== -->
+    <div class="quote">
+        <p class="hindi">"संघर्ष ही सफलता की कुंजी है।"</p>
+        <p class="english">"Struggle is the key to success."</p>
     </div>
 
-    <!-- Quote 2 -->
-    <div class="quote-card">
-      <h3>“Believe in yourself and all that you are.”</h3>
-      <p>“अपने आप पर विश्वास रखो और उस सब पर जो तुम हो।”</p>
+    <div class="quote">
+        <p class="hindi">"मेहनत कभी व्यर्थ नहीं जाती।"</p>
+        <p class="english">"Hard work never goes waste."</p>
     </div>
 
-    <!-- Quote 3 -->
-    <div class="quote-card">
-      <h3>“Great things never come from comfort zones.”</h3>
-      <p>“महान चीजें कभी भी आरामदायक जगहों से नहीं आतीं।”</p>
+    <!-- और 998+ कोट्स यहाँ ऐड करें -->
+    <div class="quote">
+        <p class="hindi">"असफलता सफलता की पहली सीढ़ी है।"</p>
+        <p class="english">"Failure is the first step to success."</p>
     </div>
 
-    <!-- Quote 4 -->
-    <div class="quote-card">
-      <h3>“Failure is the first step to success.”</h3>
-      <p>“असफलता सफलता की पहली सीढ़ी है।”</p>
+    <!-- ===== पेजिनेशन ===== -->
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="#">1</a> | <a href="#">2</a> | <a href="#">3</a> | ... | <a href="#">20</a>
     </div>
 
-    <!-- YouTube Video -->
-    <div class="video-section">
-      <h2>Watch This Motivational Video</h2>
-      <iframe width="320" height="180" src="https://www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <!-- ===== सर्च बॉक्स ===== -->
+    <input type="text" id="search" placeholder="Search quotes..." style="width: 100%; padding: 10px; margin-top: 20px;">
 
-  </div>
-
+    <script>
+        // सर्च फंक्शन (JavaScript)
+        document.getElementById('search').addEventListener('input', function() {
+            let searchTerm = this.value.toLowerCase();
+            let quotes = document.querySelectorAll('.quote');
+            
+            quotes.forEach(quote => {
+                let text = quote.textContent.toLowerCase();
+                quote.style.display = text.includes(searchTerm) ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
