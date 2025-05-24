@@ -16,10 +16,6 @@ A free collection of motivational quotes and career tips in Hindi/English.
 2. Add new quotes in `index.html`
 3. Create a **Pull Request**
 
-## 📞 Contact
-📧 Email: yourname@example.com  
-🐦 Twitter: [@YourHandle](https://twitter.com/YourHandle)
 
----
 
 "Believe you can and you're halfway there." - Theodore Roosevelt
